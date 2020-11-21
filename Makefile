@@ -15,3 +15,4 @@ signals.o: signals.c signals.h
 clean:
 	$(RM) $(TARGET) *.o *~ "#"* core.*
 
+#new line from eviatar
