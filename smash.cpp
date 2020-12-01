@@ -35,6 +35,7 @@ int main(int argc, char *argv[])
 {
     std::vector<std::string> command_history = std::vector<std::string>();
     std::vector<std::string> command_sep;
+	std::string former_location;
 
 	//signal declaretions
 	//NOTE: the signal handlers and the function/s that sets the handler should be found in siganls.c
@@ -67,7 +68,7 @@ int main(int argc, char *argv[])
 		saveCommand(command_history,commandLine);
 		HandleInputLine(commandLine, command_sep);
 
-		if(!ExeCmd(jobs, command_sep, command_history, commandLine))
+		if(!ExeCmd(jobs, command_sep, command_history, commandLine, former_location))
 		{
 
 			// built in commands
