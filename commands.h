@@ -28,7 +28,7 @@ typedef struct job_entry {
 
 int ExeComp(std::string commandLine);
 int BgCmd(std::string line, std::vector<job_entry> jobs);
-int ExeCmd(std::vector<job_entry> , std::vector<std::string>& , std::vector<std::string>&, std::string);
+int ExeCmd(std::vector<job_entry> , std::vector<std::string>& , std::vector<std::string>&, std::string, std::string);
 void ExeExternal(std::vector<std::string>& s);
 
 
